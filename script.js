@@ -197,6 +197,8 @@ const isUnique = (arr) => {
 
 */
 
+
+/*
 const isUnique = (arr) => {
   let result =  false
 
@@ -209,3 +211,34 @@ const isUnique = (arr) => {
 }
 
 console.log(isUnique([3,5,7]));
+*/
+/*
+const calculation = (n) => {
+  return n * 10;
+}
+
+const memoObj  = {}
+
+const memoTimes10 = (n) => {
+  let result;
+
+  if (n in memoObj) {
+    console.log('From memory objectn n = ', n)
+    result = memoObj[n]
+    return result
+  }  else {
+    console.log('Calculating the result inside the else loop')
+    memoObj[n] = calculation(n)
+    result = memoObj[n]
+    return result
+  }
+
+}
+
+console.log('Calculation func', calculation(9))
+console.log('Memory func', memoTimes10(9))
+console.log('Memory func', memoTimes10(9))
+console.log('Memory func', memoTimes10(10))
+
+
+*/
