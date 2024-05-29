@@ -285,9 +285,9 @@ console.log(closureFunc(9))
 */
 
 /**
- * 
- * @param {*} m 
- * @returns 
+ *
+ * @param {*} m
+ * @returns
  */
 /*
 const times10 = (m) => {
@@ -312,4 +312,25 @@ const memoClosureAnything = (callBack) => {
 const memoCalc = memoClosureAnything(times10)
 console.log(memoCalc(9))
 console.log(memoClosureAnything());
+*/
+
+/**
+ * recursion
+ */
+
+/*
+var tracker = 0;
+
+var callMe = function (arg) {
+  console.log(`This is tracker count ${tracker}`);
+  tracker++;
+  if (tracker === 3) {
+    console.log('Inside the if condition');
+    return `loops! ${arg}`;
+  }
+  console.log(`Before callMe invocation, tracker is ${tracker}`);
+  return callMe("anytime");
+};
+
+console.log(callMe());
 */
