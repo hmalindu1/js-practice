@@ -284,11 +284,7 @@ console.log(closureFunc(9))
 console.log(closureFunc(9))
 */
 
-/**
- *
- * @param {*} m
- * @returns
- */
+
 /*
 const times10 = (m) => {
   return m * 10
@@ -334,3 +330,30 @@ var callMe = function (arg) {
 
 console.log(callMe());
 */
+/*
+const loopNtimes = (n) => {
+  console.log(`before the if condition value of n = ${n}`);
+  if ( n <= 1 ) {
+    console.log(`inside the if condition`);
+    return 'complete';
+  }
+  console.log(`Value of the n before invocation of "loopNtimes(n-1)" = ${n}`);
+  return loopNtimes(n-1);
+}
+
+console.log(`final result = ${loopNtimes(3)}`);
+*/
+
+function computeFactorial(num) {
+  let result = 1;
+
+  for (let i = 2; i <= num; i++) {
+    console.log(`Value of i = ${i}`);
+    console.log(`result = ${result} * ${i} (${result * i})`);
+    result *= i;
+  }
+
+  return result;
+}
+
+console.log(computeFactorial(5));
