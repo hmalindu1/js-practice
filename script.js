@@ -197,7 +197,6 @@ const isUnique = (arr) => {
 
 */
 
-
 /*
 const isUnique = (arr) => {
   let result =  false
@@ -239,6 +238,49 @@ console.log('Calculation func', calculation(9))
 console.log('Memory func', memoTimes10(9))
 console.log('Memory func', memoTimes10(9))
 console.log('Memory func', memoTimes10(10))
+*/
 
+// closure
+/*
+const myAlert = () => {
+  const x = "Hi! Iam practicing for the Interview!";
+  let counter = 0;
+  const alerter = () => {
+    console.log(`${x} ${++counter}`);
+  };
+  return alerter;
+};
+
+const functionLog1 = myAlert();
+console.log(functionLog1);
+const functionLog2 = myAlert();
+console.log(functionLog2);
+functionLog1()
+functionLog1()
+functionLog1()
+functionLog2()
+functionLog2()
 
 */
+/*
+const memoClosureCalc = () => {
+  const memoObj = {};
+  const caclc = (n) => {
+    if (n in memoObj) {
+      console.log('From memory object', n)
+      return memoObj[n];
+    } else {
+      console.log('Calculating the result');
+      return (memoObj[n] = n * 10);
+    }
+  };
+
+  return caclc;
+};
+
+console.log(memoClosureCalc());
+const closureFunc = memoClosureCalc();
+console.log(closureFunc(9))
+console.log(closureFunc(9))
+*/
+
