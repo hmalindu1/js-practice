@@ -284,3 +284,32 @@ console.log(closureFunc(9))
 console.log(closureFunc(9))
 */
 
+/**
+ * 
+ * @param {*} m 
+ * @returns 
+ */
+/*
+const times10 = (m) => {
+  return m * 10
+}
+
+const memoClosureAnything = (callBack) => {
+  const memoObj = {};
+  const caclc = (n) => {
+    if (n in memoObj) {
+      console.log("From memory object", n);
+      return memoObj[n];
+    } else {
+      console.log("Calculating the result");
+      return (memoObj[n] = callBack(n));
+    }
+  };
+
+  return caclc;
+};
+
+const memoCalc = memoClosureAnything(times10)
+console.log(memoCalc(9))
+console.log(memoClosureAnything());
+*/
