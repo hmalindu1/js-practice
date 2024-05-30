@@ -284,7 +284,6 @@ console.log(closureFunc(9))
 console.log(closureFunc(9))
 */
 
-
 /*
 const times10 = (m) => {
   return m * 10
@@ -343,12 +342,11 @@ const loopNtimes = (n) => {
 
 console.log(`final result = ${loopNtimes(3)}`);
 */
-
+/*
 function computeFactorial(num) {
   let result = 1;
 
   for (let i = 2; i <= num; i++) {
-    console.log(`Value of i = ${i}`);
     console.log(`result = ${result} * ${i} (${result * i})`);
     result *= i;
   }
@@ -357,3 +355,16 @@ function computeFactorial(num) {
 }
 
 console.log(computeFactorial(5));
+*/
+/*
+const computeFactorial = (num) => {
+  if ((num === 1)) {
+    return 1;
+  } else {
+    return num * computeFactorial(num - 1);
+  }
+};
+
+const factorial5 = computeFactorial(5)
+console.log(factorial5);
+*/
