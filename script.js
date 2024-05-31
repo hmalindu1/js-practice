@@ -232,7 +232,7 @@ const memoTimes10 = (n) => {
     return result
   }
 
-}
+}7
 
 console.log('Calculation func', calculation(9))
 console.log('Memory func', memoTimes10(9))
@@ -368,3 +368,33 @@ const computeFactorial = (num) => {
 const factorial5 = computeFactorial(5)
 console.log(factorial5);
 */
+
+/*
+const logNumbers = (start, end) => {
+  console.log(`iteratively looping from ${start} until ${end}`);
+  
+  for (let i = start; i <= end; i++) {
+    console.log('hitting index', i);
+  }
+}
+
+console.log('~~~~ logNumbers ~~~~~');
+logNumbers(2,5)
+*/
+/* recursive function */ 
+
+const logNumbersRecursively = (start, end) => {
+  console.log(`rescursively looping from ${start} to ${end}`);
+
+  const recursive = (i) => {
+    console.log(`hitting index ${i}`);
+
+    if ( i < end) {
+      recursive( i + 1 );
+    }
+  }
+
+  recursive(start)
+}
+
+logNumbersRecursively(2,5)
