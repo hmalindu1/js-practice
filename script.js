@@ -383,6 +383,7 @@ logNumbers(2,5)
 */
 /* recursive function */ 
 
+/*
 const logNumbersRecursively = (start, end) => {
   console.log(`rescursively looping from ${start} to ${end}`);
 
@@ -398,3 +399,4 @@ const logNumbersRecursively = (start, end) => {
 }
 
 logNumbersRecursively(2,5)
+*/
