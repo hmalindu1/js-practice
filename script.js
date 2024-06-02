@@ -381,7 +381,7 @@ const logNumbers = (start, end) => {
 console.log('~~~~ logNumbers ~~~~~');
 logNumbers(2,5)
 */
-/* recursive function */ 
+/* recursive function */
 
 /*
 const logNumbersRecursively = (start, end) => {
@@ -400,3 +400,12 @@ const logNumbersRecursively = (start, end) => {
 
 logNumbersRecursively(2,5)
 */
+
+const memoFuncLoop = (i, end) => {
+  console.log(`index = ${i}`);
+  if (i < end) {
+    memoFuncLoop(i + 1, end);
+  }
+};
+
+memoFuncLoop(2, 7);
