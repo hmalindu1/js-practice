@@ -211,7 +211,7 @@ const isUnique = (arr) => {
 
 console.log(isUnique([3,5,7]));
 */
-/*
+
 const calculation = (n) => {
   return n * 10;
 }
@@ -232,13 +232,13 @@ const memoTimes10 = (n) => {
     return result
   }
 
-}7
+}
 
 console.log('Calculation func', calculation(9))
 console.log('Memory func', memoTimes10(9))
 console.log('Memory func', memoTimes10(9))
 console.log('Memory func', memoTimes10(10))
-*/
+
 
 // closure
 /*
@@ -400,7 +400,7 @@ const logNumbersRecursively = (start, end) => {
 
 logNumbersRecursively(2,5)
 */
-
+/*
 const memoFuncLoop = (i, end) => {
   console.log(`index = ${i}`);
   if (i < end) {
@@ -409,3 +409,4 @@ const memoFuncLoop = (i, end) => {
 };
 
 memoFuncLoop(2, 7);
+*/
