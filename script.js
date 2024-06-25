@@ -211,7 +211,7 @@ const isUnique = (arr) => {
 
 console.log(isUnique([3,5,7]));
 */
-
+/*
 const calculation = (n) => {
   return n * 10;
 }
